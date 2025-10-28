@@ -278,10 +278,14 @@ C:\Users\nam\source\repos\ProjectManager_Backend\ProjectManager_Backend\obj\Debu
 C:\Users\nam\source\repos\ProjectManager_Backend\ProjectManager_Backend\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\nam\source\repos\ProjectManager_Backend\ProjectManager_Backend\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\nam\source\repos\ProjectManager_Backend\ProjectManager_Backend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\nam\source\repos\ProjectManager_Backend\ProjectManager_Backend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\nam\source\repos\ProjectManager_Backend\ProjectManager_Backend\obj\Debug\net8.0\ProjectM.12EBFEC9.Up2Date
 C:\Users\nam\source\repos\ProjectManager_Backend\ProjectManager_Backend\obj\Debug\net8.0\ProjectManager_Backend.dll
 C:\Users\nam\source\repos\ProjectManager_Backend\ProjectManager_Backend\obj\Debug\net8.0\refint\ProjectManager_Backend.dll
 C:\Users\nam\source\repos\ProjectManager_Backend\ProjectManager_Backend\obj\Debug\net8.0\ProjectManager_Backend.pdb
 C:\Users\nam\source\repos\ProjectManager_Backend\ProjectManager_Backend\obj\Debug\net8.0\ProjectManager_Backend.genruntimeconfig.cache
 C:\Users\nam\source\repos\ProjectManager_Backend\ProjectManager_Backend\obj\Debug\net8.0\ref\ProjectManager_Backend.dll
+C:\Users\nam\source\repos\ProjectManager_Backend\ProjectManager_Backend\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\nam\source\repos\ProjectManager_Backend\ProjectManager_Backend\obj\Debug\net8.0\ProjectManager_Backend.sourcelink.json
+C:\Users\nam\source\repos\ProjectManager_Backend\ProjectManager_Backend\bin\Debug\net8.0\BouncyCastle.Crypto.dll
+C:\Users\nam\source\repos\ProjectManager_Backend\ProjectManager_Backend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\nam\source\repos\ProjectManager_Backend\ProjectManager_Backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
