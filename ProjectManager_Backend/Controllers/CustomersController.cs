@@ -1,15 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MyApp.Domain.Entities.Customer;
 using MyApp.Infracstructure.Data;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace ProjectManager_Backend.Controllers
 {
+    [Authorize(Roles = "ADMIN,LEADER,STAFF")]
     [Route("api/[controller]")]
     [ApiController]
     public class CustomersController : ControllerBase
@@ -43,6 +45,7 @@ namespace ProjectManager_Backend.Controllers
         }
 
         // PUT: api/Customers/5
+        [Authorize(Roles = "ADMIN,LEADER")]
         [HttpPut("{id}")]
         public async Task<ActionResult<Customer>> PutCustomer(int id, Customer customer)  // Sửa return type
         {
@@ -69,10 +72,10 @@ namespace ProjectManager_Backend.Controllers
         }
 
         // POST: api/Customers
+        [Authorize(Roles = "ADMIN,LEADER")]
         [HttpPost]
         public async Task<ActionResult<Customer>> PostCustomer(Customer customer)
         {
-            // Đảm bảo ID là 0 để database tự sinh ID
             customer.Id = 0;
 
             _context.Customers.Add(customer);
@@ -86,6 +89,7 @@ namespace ProjectManager_Backend.Controllers
         }
 
         // DELETE: api/Customers/5
+        [Authorize(Roles = "ADMIN")]
         [HttpDelete("{id}")]
         public async Task<ActionResult<Customer>> DeleteCustomer(int id)  // Sửa return type
         {
