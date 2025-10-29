@@ -17,3 +17,4 @@ C:\Users\nam\source\repos\ProjectManager_Backend\MyApp.Infracstructure\obj\Debug
 C:\Users\nam\source\repos\ProjectManager_Backend\MyApp.Infracstructure\obj\Debug\net8.0\ref\MyApp.Infracstructure.dll
 C:\Users\nam\source\repos\ProjectManager_Backend\MyApp.Infracstructure\bin\Debug\net8.0\MyApp.Infracstructure.runtimeconfig.json
 C:\Users\nam\source\repos\ProjectManager_Backend\MyApp.Infracstructure\obj\Debug\net8.0\MyApp.Infracstructure.genruntimeconfig.cache
+C:\Users\nam\source\repos\ProjectManager_Backend\MyApp.Infracstructure\obj\Debug\net8.0\MyApp.Infracstructure.sourcelink.json

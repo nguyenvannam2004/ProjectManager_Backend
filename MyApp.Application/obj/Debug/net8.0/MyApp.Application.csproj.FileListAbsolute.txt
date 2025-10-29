@@ -13,3 +13,4 @@ C:\Users\nam\source\repos\ProjectManager_Backend\MyApp.Application\obj\Debug\net
 C:\Users\nam\source\repos\ProjectManager_Backend\MyApp.Application\obj\Debug\net8.0\refint\MyApp.Application.dll
 C:\Users\nam\source\repos\ProjectManager_Backend\MyApp.Application\obj\Debug\net8.0\MyApp.Application.pdb
 C:\Users\nam\source\repos\ProjectManager_Backend\MyApp.Application\obj\Debug\net8.0\ref\MyApp.Application.dll
+C:\Users\nam\source\repos\ProjectManager_Backend\MyApp.Application\obj\Debug\net8.0\MyApp.Application.sourcelink.json

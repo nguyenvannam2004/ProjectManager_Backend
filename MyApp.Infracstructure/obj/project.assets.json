@@ -47,6 +47,19 @@
           }
         }
       },
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -977,6 +990,19 @@
           }
         }
       },
+      "Portable.BouncyCastle/1.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Stripe.net/49.0.0": {
         "type": "package",
         "dependencies": {
@@ -1601,6 +1627,37 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "BCrypt.Net-Next/4.0.3": {
+      "sha512": "W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
+      "type": "package",
+      "path": "bcrypt.net-next/4.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bcrypt.net-next.4.0.3.nupkg.sha512",
+        "bcrypt.net-next.nuspec",
+        "ico.png",
+        "lib/net20/BCrypt.Net-Next.dll",
+        "lib/net20/BCrypt.Net-Next.xml",
+        "lib/net35/BCrypt.Net-Next.dll",
+        "lib/net35/BCrypt.Net-Next.xml",
+        "lib/net462/BCrypt.Net-Next.dll",
+        "lib/net462/BCrypt.Net-Next.xml",
+        "lib/net472/BCrypt.Net-Next.dll",
+        "lib/net472/BCrypt.Net-Next.xml",
+        "lib/net48/BCrypt.Net-Next.dll",
+        "lib/net48/BCrypt.Net-Next.xml",
+        "lib/net5.0/BCrypt.Net-Next.dll",
+        "lib/net5.0/BCrypt.Net-Next.xml",
+        "lib/net6.0/BCrypt.Net-Next.dll",
+        "lib/net6.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.0/BCrypt.Net-Next.dll",
+        "lib/netstandard2.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.1/BCrypt.Net-Next.dll",
+        "lib/netstandard2.1/BCrypt.Net-Next.xml",
+        "readme.md"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -3480,6 +3537,21 @@
         "packageIcon.png"
       ]
     },
+    "Portable.BouncyCastle/1.9.0": {
+      "sha512": "eZZBCABzVOek+id9Xy04HhmgykF0wZg9wpByzrWN7q8qEI0Qen9b7tfd7w8VA3dOeesumMG7C5ZPy0jk7PSRHw==",
+      "type": "package",
+      "path": "portable.bouncycastle/1.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/BouncyCastle.Crypto.dll",
+        "lib/net40/BouncyCastle.Crypto.xml",
+        "lib/netstandard2.0/BouncyCastle.Crypto.dll",
+        "lib/netstandard2.0/BouncyCastle.Crypto.xml",
+        "portable.bouncycastle.1.9.0.nupkg.sha512",
+        "portable.bouncycastle.nuspec"
+      ]
+    },
     "Stripe.net/49.0.0": {
       "sha512": "cETS35+ebUI9Jy/XapirLp11P7fd5ibzM8uckhVBl09K0vKCPyoJ8MNMZpK7+bg3zPzmyxd5aCg1L/aWejB5zQ==",
       "type": "package",
@@ -4638,12 +4710,14 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "BCrypt.Net-Next >= 4.0.3",
       "Microsoft.EntityFrameworkCore >= 9.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.10",
       "MyApp.Application >= 1.0.0",
-      "MyApp.Domain >= 1.0.0"
+      "MyApp.Domain >= 1.0.0",
+      "Portable.BouncyCastle >= 1.9.0"
     ]
   },
   "packageFolders": {
@@ -4653,11 +4727,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nam\\source\\repos\\ProjectManager_Backend\\MyApp.Infracstructure\\MyApp.Infracstructure.csproj",
+      "projectUniqueName": "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Infracstructure\\MyApp.Infracstructure.csproj",
       "projectName": "MyApp.Infracstructure",
-      "projectPath": "C:\\Users\\nam\\source\\repos\\ProjectManager_Backend\\MyApp.Infracstructure\\MyApp.Infracstructure.csproj",
+      "projectPath": "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Infracstructure\\MyApp.Infracstructure.csproj",
       "packagesPath": "C:\\Users\\nam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nam\\source\\repos\\ProjectManager_Backend\\MyApp.Infracstructure\\obj\\",
+      "outputPath": "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Infracstructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4679,11 +4753,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\nam\\source\\repos\\ProjectManager_Backend\\MyApp.Application\\MyApp.Application.csproj": {
-              "projectPath": "C:\\Users\\nam\\source\\repos\\ProjectManager_Backend\\MyApp.Application\\MyApp.Application.csproj"
+            "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Application\\MyApp.Application.csproj": {
+              "projectPath": "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Application\\MyApp.Application.csproj"
             },
-            "C:\\Users\\nam\\source\\repos\\ProjectManager_Backend\\MyApp.Domain\\MyApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\nam\\source\\repos\\ProjectManager_Backend\\MyApp.Domain\\MyApp.Domain.csproj"
+            "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Domain\\MyApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Domain\\MyApp.Domain.csproj"
             }
           }
         }
@@ -4704,6 +4778,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "BCrypt.Net-Next": {
+            "target": "Package",
+            "version": "[4.0.3, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[9.0.10, )"
@@ -4723,6 +4801,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[9.0.10, )"
+          },
+          "Portable.BouncyCastle": {
+            "target": "Package",
+            "version": "[1.9.0, )"
           }
         },
         "imports": [
