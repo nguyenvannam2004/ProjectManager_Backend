@@ -9,3 +9,16 @@ C:\Users\nam\source\repos\ProjectManager_Backend\MyApp.Domain\obj\Debug\net8.0\M
 C:\Users\nam\source\repos\ProjectManager_Backend\MyApp.Domain\obj\Debug\net8.0\refint\MyApp.Domain.dll
 C:\Users\nam\source\repos\ProjectManager_Backend\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.pdb
 C:\Users\nam\source\repos\ProjectManager_Backend\MyApp.Domain\obj\Debug\net8.0\ref\MyApp.Domain.dll
+C:\Users\nam\source\repos\ProjectManager_Backend\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.sourcelink.json
+D:\ProjectManager_Backend\ProjectManager_Backend\MyApp.Domain\bin\Debug\net8.0\MyApp.Domain.deps.json
+D:\ProjectManager_Backend\ProjectManager_Backend\MyApp.Domain\bin\Debug\net8.0\MyApp.Domain.dll
+D:\ProjectManager_Backend\ProjectManager_Backend\MyApp.Domain\bin\Debug\net8.0\MyApp.Domain.pdb
+D:\ProjectManager_Backend\ProjectManager_Backend\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProjectManager_Backend\ProjectManager_Backend\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.AssemblyInfoInputs.cache
+D:\ProjectManager_Backend\ProjectManager_Backend\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.AssemblyInfo.cs
+D:\ProjectManager_Backend\ProjectManager_Backend\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.csproj.CoreCompileInputs.cache
+D:\ProjectManager_Backend\ProjectManager_Backend\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.sourcelink.json
+D:\ProjectManager_Backend\ProjectManager_Backend\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.dll
+D:\ProjectManager_Backend\ProjectManager_Backend\MyApp.Domain\obj\Debug\net8.0\refint\MyApp.Domain.dll
+D:\ProjectManager_Backend\ProjectManager_Backend\MyApp.Domain\obj\Debug\net8.0\MyApp.Domain.pdb
+D:\ProjectManager_Backend\ProjectManager_Backend\MyApp.Domain\obj\Debug\net8.0\ref\MyApp.Domain.dll

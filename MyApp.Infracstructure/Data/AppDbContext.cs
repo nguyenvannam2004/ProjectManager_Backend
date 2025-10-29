@@ -1,5 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using BCrypt.Net;
+using Microsoft.EntityFrameworkCore;
 using MyApp.Domain.Entities.Customer;
+using MyApp.Domain.Entities.Product;
+using MyApp.Domain.Entities.Project;
+using MyApp.Domain.Entities.Role;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +17,12 @@ namespace MyApp.Infracstructure.Data
         public AppDbContext (DbContextOptions option) : base (option)
         {
         }
-        public DbSet<Customer> Customers { get; set; } 
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<Product> Products { get; set; }
+
+        public DbSet<Stage> Stages { get; set; }
+
     }
 }
