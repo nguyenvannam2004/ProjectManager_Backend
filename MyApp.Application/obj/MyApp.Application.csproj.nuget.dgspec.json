@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Application\\MyApp.Application.csproj": {}
+    "D:\\ProjectManager_Backend\\ProjectManager_Backend\\MyApp.Application\\MyApp.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Application\\MyApp.Application.csproj": {
+    "D:\\ProjectManager_Backend\\ProjectManager_Backend\\MyApp.Application\\MyApp.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Application\\MyApp.Application.csproj",
+        "projectUniqueName": "D:\\ProjectManager_Backend\\ProjectManager_Backend\\MyApp.Application\\MyApp.Application.csproj",
         "projectName": "MyApp.Application",
-        "projectPath": "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Application\\MyApp.Application.csproj",
-        "packagesPath": "C:\\Users\\nam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Application\\obj\\",
+        "projectPath": "D:\\ProjectManager_Backend\\ProjectManager_Backend\\MyApp.Application\\MyApp.Application.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "D:\\ProjectManager_Backend\\ProjectManager_Backend\\MyApp.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Domain\\MyApp.Domain.csproj": {
-                "projectPath": "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Domain\\MyApp.Domain.csproj"
+              "D:\\ProjectManager_Backend\\ProjectManager_Backend\\MyApp.Domain\\MyApp.Domain.csproj": {
+                "projectPath": "D:\\ProjectManager_Backend\\ProjectManager_Backend\\MyApp.Domain\\MyApp.Domain.csproj"
               }
             }
           }
@@ -49,7 +49,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -80,24 +80,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Domain\\MyApp.Domain.csproj": {
+    "D:\\ProjectManager_Backend\\ProjectManager_Backend\\MyApp.Domain\\MyApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Domain\\MyApp.Domain.csproj",
+        "projectUniqueName": "D:\\ProjectManager_Backend\\ProjectManager_Backend\\MyApp.Domain\\MyApp.Domain.csproj",
         "projectName": "MyApp.Domain",
-        "projectPath": "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Domain\\MyApp.Domain.csproj",
-        "packagesPath": "C:\\Users\\nam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nam\\Desktop\\ProjectManager_Backend\\MyApp.Domain\\obj\\",
+        "projectPath": "D:\\ProjectManager_Backend\\ProjectManager_Backend\\MyApp.Domain\\MyApp.Domain.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "D:\\ProjectManager_Backend\\ProjectManager_Backend\\MyApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -125,7 +125,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -146,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MyApp.Domain.Entities.Customer;
 using MyApp.Domain.Entities.Product;
+using MyApp.Domain.Entities.Project;
 using MyApp.Domain.Entities.Role;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,8 @@ namespace MyApp.Infracstructure.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Product> Products { get; set; }
+
+        public DbSet<Stage> Stages { get; set; }
 
     }
 }
