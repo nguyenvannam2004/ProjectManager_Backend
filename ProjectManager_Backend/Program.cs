@@ -61,6 +61,10 @@ builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 
+builder.Services.AddScoped<TaskService>();
+builder.Services.AddScoped<ITaskRepository, TaskRepository>();
+
+
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
