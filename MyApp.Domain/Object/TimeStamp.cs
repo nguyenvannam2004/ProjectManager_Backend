@@ -12,6 +12,7 @@ namespace MyApp.Domain.Object
         public DateTime? UpdatedAt { get; }
         public DateTime? StartDate { get; }
         public DateTime? EndDate { get; }
+        public TimeStamp() { }
 
         public TimeStamp(DateTime createdAt, DateTime? updatedAt = null, DateTime? startDate = null, DateTime? endDate = null)
         {

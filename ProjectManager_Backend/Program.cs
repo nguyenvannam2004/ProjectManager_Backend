@@ -60,6 +60,9 @@ builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
+builder.Services.AddScoped<ProjectService>();
+builder.Services.AddScoped<IProjectRepository, ProjectRepository>();
+
 
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())

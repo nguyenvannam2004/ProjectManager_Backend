@@ -11,8 +11,8 @@ using MyApp.Infracstructure.Data;
 namespace MyApp.Infracstructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251029072609_Init product")]
-    partial class Initproduct
+    [Migration("20251030052911_Init project")]
+    partial class Initproject
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -78,6 +78,35 @@ namespace MyApp.Infracstructure.Migrations
                     b.ToTable("Product");
                 });
 
+            modelBuilder.Entity("MyApp.Domain.Entities.Project.Project", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CreatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Projects");
+                });
+
             modelBuilder.Entity("MyApp.Domain.Entities.Role.Role", b =>
                 {
                     b.Property<int>("Id")
@@ -119,6 +148,25 @@ namespace MyApp.Infracstructure.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("MyApp.Domain.Entities.Project.Project", b =>
+                {
+                    b.OwnsOne("MyApp.Domain.Object.TimeStamp", "Timestamp", b1 =>
+                        {
+                            b1.Property<int>("ProjectId")
+                                .HasColumnType("int");
+
+                            b1.HasKey("ProjectId");
+
+                            b1.ToTable("Projects");
+
+                            b1.WithOwner()
+                                .HasForeignKey("ProjectId");
+                        });
+
+                    b.Navigation("Timestamp")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("User", b =>
