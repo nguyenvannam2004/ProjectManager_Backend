@@ -27,11 +27,11 @@ namespace MyApp.Domain.Entities.Project
         public Status Status { get; set; }
 
         [Required]
-        public DateTime TimeStamp { get; set; }
+        public TimeStamp TimeStamp { get; set; }
 
         public Stage() { }
 
-        public Stage(int id, string name, int projectId, string description, Status status, DateTime timeStamp)
+        public Stage(int id, string name, int projectId, string description, Status status, TimeStamp timeStamp)
         {
             Id = id;
             Name = name;

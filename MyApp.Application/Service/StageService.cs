@@ -35,7 +35,7 @@ namespace MyApp.Application.Service
         //}
 
         // ✅ Tạo mới Stage
-        public Stage CreateStage(string name, string description, Status status, int projectId)
+        public Stage CreateStage(string name, string description, Status status, int projectId, TimeStamp timestamp )
         {
             var stage = new Stage
             {
@@ -43,7 +43,7 @@ namespace MyApp.Application.Service
                 Description = description,
                 Status = status,
                 ProjectId = projectId,
-                TimeStamp = DateTime.UtcNow
+                TimeStamp = timestamp,
             };
 
             _repository.Add(stage);
@@ -51,7 +51,7 @@ namespace MyApp.Application.Service
         }
 
         // ✅ Cập nhật Stage
-        public void UpdateStage(int id, string name, string description, Status status, int projectId)
+        public void UpdateStage(int id, string name, string description, Status status, int projectId, TimeStamp timestamp)
         {
             var stage = _repository.GetById(id);
             if (stage == null)
@@ -61,7 +61,7 @@ namespace MyApp.Application.Service
             stage.Description = description;
             stage.Status = status;
             stage.ProjectId = projectId;
-            stage.TimeStamp = DateTime.UtcNow;
+            stage.TimeStamp = timestamp;
 
             _repository.Update(stage);
         }
