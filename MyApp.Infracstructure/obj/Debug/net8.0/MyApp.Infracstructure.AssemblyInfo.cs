@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyApp.Infracstructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0349dae93926ea3a235a53e6d3bca7a5c49da58f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5ac847b1c3955938b9ebc6454c5655c4d243cd2")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyApp.Infracstructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyApp.Infracstructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
