@@ -8,7 +8,6 @@ obj/
 *.suo
 *.pdb
 *.cache
-*.sln.docstates
 
 # Rider
 .idea/
@@ -17,8 +16,6 @@ obj/
 *.nupkg
 *.snupkg
 packages/
-project.lock.json
-project.fragment.lock.json
 artifacts/
 
 # OS Files
