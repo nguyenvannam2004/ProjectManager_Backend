@@ -872,3 +872,4 @@ C:\Users\nam\Desktop\ProjectManager_Backend\ProjectManager_Backend\obj\Debug\net
 C:\Users\nam\Desktop\ProjectManager_Backend\ProjectManager_Backend\obj\Debug\net8.0\ProjectManager_Backend.genruntimeconfig.cache
 C:\Users\nam\Desktop\ProjectManager_Backend\ProjectManager_Backend\obj\Debug\net8.0\ref\ProjectManager_Backend.dll
 C:\Users\nam\Desktop\ProjectManager_Backend\ProjectManager_Backend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\nam\Desktop\ProjectManager_Backend\ProjectManager_Backend\bin\Debug\net8.0\AutoMapper.dll

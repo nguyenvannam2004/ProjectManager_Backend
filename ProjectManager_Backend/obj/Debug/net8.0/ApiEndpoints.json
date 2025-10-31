@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "ProjectManager_Backend.Controllers.LoginRequest",
+        "Type": "ProjectManager_Backend.Model.LoginRequest",
         "IsRequired": true
       }
     ],
@@ -50,6 +50,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjectManager_Backend.Controllers.AuthController",
+    "Method": "GetUsers",
+    "RelativePath": "api/Auth/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -201,7 +211,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "ProjectManager_Backend.Controllers.ProductDto",
+        "Type": "ProjectManager_Backend.Model.ProductDto",
         "IsRequired": true
       }
     ],
@@ -238,7 +248,7 @@
       },
       {
         "Name": "dto",
-        "Type": "ProjectManager_Backend.Controllers.ProductDto",
+        "Type": "ProjectManager_Backend.Model.ProductDto",
         "IsRequired": true
       }
     ],
@@ -280,7 +290,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "ProjectManager_Backend.Controllers.ProjectDto",
+        "Type": "ProjectManager_Backend.Model.ProjectDto",
         "IsRequired": true
       }
     ],
@@ -317,7 +327,7 @@
       },
       {
         "Name": "dto",
-        "Type": "ProjectManager_Backend.Controllers.ProjectDto",
+        "Type": "ProjectManager_Backend.Model.ProjectDto",
         "IsRequired": true
       }
     ],
@@ -359,7 +369,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "ProjectManager_Backend.Controllers.StageDto",
+        "Type": "ProjectManager_Backend.Model.StageDto",
         "IsRequired": true
       }
     ],
@@ -396,7 +406,7 @@
       },
       {
         "Name": "dto",
-        "Type": "ProjectManager_Backend.Controllers.StageDto",
+        "Type": "ProjectManager_Backend.Model.StageDto",
         "IsRequired": true
       }
     ],
@@ -438,7 +448,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "ProjectManager_Backend.Controllers.TaskDto",
+        "Type": "ProjectManager_Backend.Model.TaskDto",
         "IsRequired": true
       }
     ],
@@ -475,7 +485,7 @@
       },
       {
         "Name": "dto",
-        "Type": "ProjectManager_Backend.Controllers.TaskDto",
+        "Type": "ProjectManager_Backend.Model.TaskDto",
         "IsRequired": true
       }
     ],

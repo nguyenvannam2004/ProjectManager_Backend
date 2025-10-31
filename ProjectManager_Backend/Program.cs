@@ -71,6 +71,10 @@ builder.Services.AddScoped<IProjectRepository, ProjectRepository>();
 builder.Services.AddScoped<TaskService>();
 builder.Services.AddScoped<ITaskRepository, TaskRepository>();
 
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<AuthService>();
+
+
 
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())

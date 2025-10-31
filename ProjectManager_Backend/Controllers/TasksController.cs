@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MyApp.Application.Service; // TaskService
 using MyApp.Domain.Entities.Task; // Tasks
 using MyApp.Domain.Object;
+using ProjectManager_Backend.Model;
 using System.Collections.Generic;
 
 namespace ProjectManager_Backend.Controllers
@@ -37,6 +39,7 @@ namespace ProjectManager_Backend.Controllers
         }
 
         // POST: api/Tasks
+        [Authorize(Roles = "ADMIN,LEADER")]
         [HttpPost]
         public IActionResult Create([FromBody] TaskDto dto)
         {
@@ -65,6 +68,7 @@ namespace ProjectManager_Backend.Controllers
         }
 
         // DELETE: api/Tasks/5
+        [Authorize(Roles = "ADMIN,LEADER")]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
@@ -75,16 +79,5 @@ namespace ProjectManager_Backend.Controllers
             _taskService.DeleteTask(id);
             return NoContent();
         }
-    }
-
-    // DTO để nhận dữ liệu từ client
-    public class TaskDto
-    {
-        public int StagedId { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public Status Status { get; set; }
-        public int CreateBy { get; set; }
-        public TimeStamp TimeStamp { get; set; }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyApp.Application.Service; // ProductService
 using MyApp.Domain.Entities.Product; // Product
+using ProjectManager_Backend.Model;
 using System.Collections.Generic;
 
 namespace ProjectManager_Backend.Controllers
@@ -65,13 +66,5 @@ namespace ProjectManager_Backend.Controllers
             _productService.DeleteProduct(id);
             return NoContent();
         }
-    }
-
-    // DTO để nhận dữ liệu từ client
-    public class ProductDto
-    {
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public double Price { get; set; }
     }
 }

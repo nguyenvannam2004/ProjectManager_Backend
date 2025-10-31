@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MyApp.Application.Service; // StageService
 using MyApp.Domain.Entities.Project; // Stage
 
 using MyApp.Domain.Object;
+using ProjectManager_Backend.Model;
 using System.Collections.Generic;
 
 namespace ProjectManager_Backend.Controllers
@@ -18,6 +20,7 @@ namespace ProjectManager_Backend.Controllers
             _stageService = stageService;
         }
 
+        
         // GET: api/Stages
         [HttpGet]
         public IActionResult GetAll()
@@ -27,6 +30,7 @@ namespace ProjectManager_Backend.Controllers
         }
 
         // GET: api/Stages/5
+        [Authorize(Roles = "ADMIN,LEADER")]
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
@@ -38,6 +42,7 @@ namespace ProjectManager_Backend.Controllers
         }
 
         // POST: api/Stages
+        [Authorize(Roles = "ADMIN,LEADER")]
         [HttpPost]
         public IActionResult Create([FromBody] StageDto dto)
         {
@@ -46,6 +51,7 @@ namespace ProjectManager_Backend.Controllers
         }
 
         // PUT: api/Stages/5
+        [Authorize(Roles = "ADMIN,LEADER")]
         [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody] StageDto dto)
         {
@@ -58,6 +64,7 @@ namespace ProjectManager_Backend.Controllers
         }
 
         // DELETE: api/Stages/5
+        [Authorize(Roles = "ADMIN,LEADER")]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
@@ -69,14 +76,4 @@ namespace ProjectManager_Backend.Controllers
             return NoContent();
         }
     }
-
-    // DTO để nhận dữ liệu từ client
-    public class StageDto
-    {
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public Status Status { get; set; } // enum: Pending, InProgress, Completed, Cancelled
-        public int ProjectId { get; set; }
-        public TimeStamp TimeStamp { get; set; }
-        }
 }

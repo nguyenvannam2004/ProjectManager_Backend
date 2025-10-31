@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using MyApp.Application.Service;
 using MyApp.Domain.Entities.Project;
 using MyApp.Domain.Object;
+using ProjectManager_Backend.Model;
 using System.Collections.Generic;
 
 namespace ProjectManager_Backend.Controllers
@@ -38,7 +39,7 @@ namespace ProjectManager_Backend.Controllers
         }
 
         // POST: api/Projects
-        //[Authorize(Roles = "ADMIN,LEADER")]
+        [Authorize(Roles = "ADMIN,LEADER")]
         [HttpPost]
         public IActionResult Create([FromBody] ProjectDto dto)
         {
@@ -53,7 +54,7 @@ namespace ProjectManager_Backend.Controllers
         }
 
         // PUT: api/Projects/5
-        //[Authorize(Roles = "ADMIN,LEADER")]
+        [Authorize(Roles = "ADMIN,LEADER")]
         [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody] ProjectDto dto)
         {
@@ -73,7 +74,7 @@ namespace ProjectManager_Backend.Controllers
         }
 
         // DELETE: api/Projects/5
-        //[Authorize(Roles = "ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
@@ -84,15 +85,5 @@ namespace ProjectManager_Backend.Controllers
             _projectService.DeleteProject(id);
             return NoContent();
         }
-    }
-
-    // DTO for receiving data from client
-    public class ProjectDto
-    {
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public Status Status { get; set; }
-        public int CreatedBy { get; set; }
-        public TimeStamp TimeStamp { get; set; }
     }
 }
