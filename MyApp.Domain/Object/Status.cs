@@ -12,5 +12,6 @@ namespace MyApp.Domain.Object
         InProgress = 1 ,
         Completed = 2 ,
         Cancelled = 3,
+        Todo = 4,
     }
 }
