@@ -8,10 +8,14 @@ namespace MyApp.Domain.Object
 {
     public class TimeStamp
     {
-        public DateTime CreatedAt { get; }
-        public DateTime? UpdatedAt { get; }
-        public DateTime? StartDate { get; }
-        public DateTime? EndDate { get; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public DateTime? StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
+        public TimeStamp()
+        {
+            
+        }
 
         public TimeStamp(DateTime createdAt, DateTime? updatedAt = null, DateTime? startDate = null, DateTime? endDate = null)
         {

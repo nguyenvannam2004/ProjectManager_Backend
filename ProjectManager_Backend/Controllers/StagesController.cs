@@ -41,7 +41,7 @@ namespace ProjectManager_Backend.Controllers
         [HttpPost]
         public IActionResult Create([FromBody] StageDto dto)
         {
-            var stage = _stageService.CreateStage(dto.Name, dto.Description, dto.Status, dto.ProjectId);
+            var stage = _stageService.CreateStage(dto.Name, dto.Description, dto.Status, dto.ProjectId, dto.TimeStamp);
             return CreatedAtAction(nameof(GetById), new { id = stage.Id }, stage);
         }
 
@@ -53,7 +53,7 @@ namespace ProjectManager_Backend.Controllers
             if (existingStage == null)
                 return NotFound();
 
-            _stageService.UpdateStage(id, dto.Name, dto.Description, dto.Status, dto.ProjectId);
+            _stageService.UpdateStage(id, dto.Name, dto.Description, dto.Status, dto.ProjectId,dto.TimeStamp);
             return NoContent();
         }
 
@@ -77,5 +77,6 @@ namespace ProjectManager_Backend.Controllers
         public string Description { get; set; }
         public Status Status { get; set; } // enum: Pending, InProgress, Completed, Cancelled
         public int ProjectId { get; set; }
-    }
+        public TimeStamp TimeStamp { get; set; }
+        }
 }

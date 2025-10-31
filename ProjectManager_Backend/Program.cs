@@ -51,7 +51,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
+    b => b.MigrationsAssembly("MyApp.Infracstructure")
+    ));
 
 
 builder.Services.AddScoped<CustomerService>();
@@ -62,6 +64,12 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 builder.Services.AddScoped<StageService>();
 builder.Services.AddScoped<IStageRepository, StageRepository>();
+
+builder.Services.AddScoped<ProjectService>();
+builder.Services.AddScoped<IProjectRepository, ProjectRepository>();
+
+builder.Services.AddScoped<TaskService>();
+builder.Services.AddScoped<ITaskRepository, TaskRepository>();
 
 
 var app = builder.Build();
